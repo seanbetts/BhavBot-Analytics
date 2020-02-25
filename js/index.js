@@ -4,15 +4,15 @@
 
 // Variable to set URL for daily fetch() function
 var yesterday = moment(new Date()).add(-1, 'days').format('YYYY-MM-DD')
-var yesterdaysDataURL = 'https://mihndbotblob.blob.core.windows.net/mihndbot-transcripts/finalTranscripts/dailyTranscripts/' + yesterday + '.json'
+var yesterdaysDataURL = 'https://bhavbot.blob.core.windows.net/bhavbot-transcripts/finalTranscripts/dailyTranscripts/' + yesterday + '.json'
 
 // Variable to set URL for monthly fetch() function
 var thisMonth = moment(new Date()).format('YYYY-MM')
-var thisMonthsDataURL = 'https://mihndbotblob.blob.core.windows.net/mihndbot-transcripts/finalTranscripts/monthlyTranscripts/' + thisMonth + '.json'
+var thisMonthsDataURL = 'https://bhavbot.blob.core.windows.net/bhavbot-transcripts/finalTranscripts/monthlyTranscripts/' + thisMonth + '.json'
 
 // Variable to set URL for yearly fetch() function
 var thisYear = moment(new Date()).format('YYYY')
-var thisYearsDataURL = 'https://mihndbotblob.blob.core.windows.net/mihndbot-transcripts/finalTranscripts/yearlyTranscripts/' + thisYear + '.json'
+var thisYearsDataURL = 'https://bhavbot.blob.core.windows.net/bhavbot-transcripts/finalTranscripts/yearlyTranscripts/' + thisYear + '.json'
 
 // Fetch() yesterday's transcripts
 function getDailyTranscripts (url) {
